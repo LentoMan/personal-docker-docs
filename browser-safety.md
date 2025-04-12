@@ -1,10 +1,10 @@
 # Browser safety
-Your browser could potentially leak or exfiltrate data to the internet using javascrip, turning off javascript is usually not an option as it may break the application. 
+Your browser could potentially leak or exfiltrate data to the internet using javascript and turning off javascript is usually not an option as it will break the application. 
 
 An easy fix is to use Firefox in offline mode which is described in the section below. Some other options to explore would be either using a software firewall to block external traffic for the browser executable or configuring a secure local proxy in your browser.
 
 ## Firefox Offline Mode
-, an easy fix is to use Firefox with the `Work Offline` option. After starting Firefox, press `Alt` or `F10`, then select `Work Offline` from the file menu. You will still be able to access localhost but there should be no external internet access. You may also want to open developer mode with `F12` to monitor the **Console** and **Network** tabs for potential issues when working offline. Some remote dependencies may be loaded from content delivery networks, but can often be cached before working offline.
+Firefox can be used in offline mode, where it does not allow outgoing traffic to the internet but allows access to localhost. After starting Firefox, press `Alt` or `F10`, then select `Work Offline` from the file menu. You will still be able to access localhost but there should be no external internet access. You may also want to open developer mode with `F12` to monitor the **Console** and **Network** tabs for potential issues when working offline. Some remote dependencies may be loaded from content delivery networks, but can often be cached before working offline.
 
 When using offline mode, you may run into browser issues with things like dropdowns not updating with latest added models etc., consider turning off disk cache or clearing browser cache if that happens. It may be a good idea to create a separate Firefox profile without disk cache which always starts in offline mode.
 
